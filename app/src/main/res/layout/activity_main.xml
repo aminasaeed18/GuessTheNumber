@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/numback"
+    android:id="@+id/screen"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="19dp"
+        android:text="I am thinking of a number between 1 to 20"
+        android:textSize="17dp"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/colorGreen"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can ou guess it?"
+        android:textSize="19dp"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/guessNumber"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorRed"
+        android:textColorHint="@color/colorGreen"
+        android:textColorHighlight="@color/colorGreen"
+        android:textColorLink="@color/colorGreen"
+        android:backgroundTint="@color/colorGreen"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="17dp"
+         />
+
+    <Button
+        android:id="@+id/guess"
+        android:layout_width="192dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/greenbtn"
+        android:onClick="guess"
+        android:text="Guess"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="160dp" />
+</LinearLayout>
